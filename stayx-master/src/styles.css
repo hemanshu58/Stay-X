@@ -1,0 +1,80 @@
+/* General styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #eff6f6;
+}
+
+
+
+/* Home page styles */
+.home-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.slider-container {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 15px; /* Rounded corners for the slider container */
+  overflow: hidden; /* Ensure content doesn't overflow outside the container */
+}
+
+.slider-item {
+  position: relative;
+  height: 300px; /* Fixed height for the slider */
+}
+
+.slider-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure images cover the container while maintaining aspect ratio */
+  border-radius: 15px; /* Rounded corners for the images */
+}
+
+/* Left and right arrow styles *****************************************************************************/
+.custom-arrow-left,
+.custom-arrow-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none; /* Remove background */
+  color: #008080; /* Theme color for arrows */
+  font-size: 60px; /* Double the previous arrow size */
+  border: none; /* Remove borders */
+  cursor: pointer;
+  z-index: 1;
+}
+
+.custom-arrow-left {
+  left: 10px; /* Adjust as needed */
+}
+
+.custom-arrow-right {
+  right: 10px; /* Adjust as needed */
+}
+
+.custom-arrow-left:hover,
+.custom-arrow-right:hover {
+  color: #005959; /* Darker teal for hover effect */
+}
+
+.custom-arrow-left i,
+.custom-arrow-right i {
+  font-size: 100px; /* Double the previous icon size */
+  font-style: normal; /* Remove italic style */
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .filter-row {
+    flex-direction: column;
+  }
+
+  .filter-item {
+    margin-bottom: 10px;
+  }
+}
